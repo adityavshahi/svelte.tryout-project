@@ -1,0 +1,1 @@
+<h2>Svelte seems fun and easy !!</h2>
