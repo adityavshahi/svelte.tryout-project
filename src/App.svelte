@@ -3,6 +3,7 @@
   import Fun from './Fun.svelte';
   import StyleTest from './StyleTest.svelte';
   import Slider from './Slider.svelte';
+  import ColorPicker from './ColorPicker.svelte';
 
   let name = 'Naruto';
   let address = 'Konoha Village';
@@ -24,5 +25,8 @@
 <Fun />
 <p style="font-size: {fontSize};">Name : {name.toUpperCase()},Address: {address}</p>
 <h3>SIZE : {size}</h3>
-<Child bind:fontSize={size} />
+<!-- <Child bind:fontSize={size} /> -->
 <StyleTest />
+
+
+<ColorPicker />
