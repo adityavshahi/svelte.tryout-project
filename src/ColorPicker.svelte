@@ -13,7 +13,7 @@
         border-radius: 0.2rem;
     }
 </style>
-
+<h1 id="colorpicker-h1">Color Picker</h1>
 <h3>Red ({red})</h3>
 <input type="range" bind:value={red} max="255" min="0">
 

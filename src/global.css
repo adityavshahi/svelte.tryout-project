@@ -2,3 +2,7 @@ h1 {
   color: cornflowerblue;
   letter-spacing: 10px;
 }
+
+#colorpicker-h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
