@@ -6,3 +6,10 @@ h1 {
 #colorpicker-h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+#joke-element {
+  border: 2px solid lightblue;
+  background-color: lightblue;
+  border-radius: 5px;
+  padding: 20px;
+}

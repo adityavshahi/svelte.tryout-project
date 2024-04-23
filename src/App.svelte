@@ -4,6 +4,7 @@
   import StyleTest from './StyleTest.svelte';
   import Slider from './Slider.svelte';
   import ColorPicker from './ColorPicker.svelte';
+  import Jokes from './Jokes.svelte';
 
   let name = 'Naruto';
   let address = 'Konoha Village';
@@ -16,6 +17,16 @@
   },1000);
 
   let size = 1;
+  let joke = 'Loading...';
+  let fetchJoke = () => {
+    fetch('https://api.chucknorris.io/jokes/random')
+    .then(res => res.json())
+    .then((data) => {
+      joke = data.value;
+    })
+    .catch((err) => console.log(`Something Went Wrong : ${err}`));
+  }
+  fetchJoke()
 </script>
 
 <h1>Hello World - Svelte</h1>
@@ -30,3 +41,5 @@
 
 
 <ColorPicker />
+
+<Jokes joke={joke}/>
