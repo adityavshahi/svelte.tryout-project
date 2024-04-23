@@ -5,6 +5,7 @@
   import Slider from './Slider.svelte';
   import ColorPicker from './ColorPicker.svelte';
   import Jokes from './Jokes.svelte';
+  import DomEvents from './DomEvents.svelte';
 
   let name = 'Naruto';
   let address = 'Konoha Village';
@@ -43,3 +44,5 @@
 <ColorPicker />
 
 <Jokes joke={joke}/>
+
+<DomEvents />
