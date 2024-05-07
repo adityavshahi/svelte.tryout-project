@@ -2,8 +2,12 @@
     let name = '';
     let age = null;
     import {createEventDispatcher} from 'svelte';
-
+    const dispatch = createEventDispatcher();
     function onSubmit(e) {
+        dispatch('submit',{
+            name:name,
+            age:age,
+        });
         console.log("Form Submitted!!");
     }
 </script>

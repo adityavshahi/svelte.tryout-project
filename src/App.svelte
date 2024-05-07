@@ -6,6 +6,7 @@
   import ColorPicker from './ColorPicker.svelte';
   import Jokes from './Jokes.svelte';
   import DomEvents from './DomEvents.svelte';
+  import Form from './Form.svelte';
 
   let name = 'Naruto';
   let address = 'Konoha Village';
@@ -28,6 +29,12 @@
     .catch((err) => console.log(`Something Went Wrong : ${err}`));
   }
   fetchJoke()
+
+  function onFormSubmit(e) {
+    console.log(e);
+    const {name,age} = e.detail;
+    console.log(name,age,'details from event');
+  }
 </script>
 
 <h1>Hello World - Svelte</h1>
@@ -46,3 +53,5 @@
 <Jokes joke={joke}/>
 
 <DomEvents />
+
+<Form on:submit={onFormSubmit} />
