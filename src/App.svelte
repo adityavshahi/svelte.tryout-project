@@ -8,6 +8,7 @@
   import DomEvents from './DomEvents.svelte';
   import Form from './Form.svelte';
   import ReactiveVariables from './ReactiveVariables.svelte';
+  import Conditionals from './Conditionals.svelte';
 
   let name = 'Naruto';
   let address = 'Konoha Village';
@@ -58,3 +59,5 @@
 <Form on:submit={onFormSubmit} />
 
 <ReactiveVariables />
+
+<Conditionals />
