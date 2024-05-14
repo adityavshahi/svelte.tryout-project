@@ -3,7 +3,7 @@
     let green = 0;
     let blue = 0;
 
-    $: colorValue = `${red}, ${green}, ${blue}`;
+    $: colorValue = `rgb(${red}, ${green}, ${blue})`;
 
     setTimeout(() => {
         red += 10;

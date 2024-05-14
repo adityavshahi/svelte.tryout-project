@@ -2,6 +2,13 @@
     let red = 0;
     let blue = 0;
     let green = 0;
+
+    function rgbToHex(r, g, b) {
+        return "#" + (1 << 24 | r << 16 | g << 8 | b).toString(16).slice(1);
+    }
+
+    $: hexColor = rgbToHex(red,green,blue);
+
 </script>
 
 
@@ -25,3 +32,5 @@
 
 
 <div style="background-color: rgb({red}, {green}, {blue});"></div>
+
+<h2>HEX: {hexColor}</h2>
