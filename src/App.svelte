@@ -7,6 +7,7 @@
   import Jokes from './Jokes.svelte';
   import DomEvents from './DomEvents.svelte';
   import Form from './Form.svelte';
+  import ReactiveVariables from './ReactiveVariables.svelte';
 
   let name = 'Naruto';
   let address = 'Konoha Village';
@@ -55,3 +56,5 @@
 <DomEvents />
 
 <Form on:submit={onFormSubmit} />
+
+<ReactiveVariables />
