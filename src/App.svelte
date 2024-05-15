@@ -9,6 +9,7 @@
   import Form from './Form.svelte';
   import ReactiveVariables from './ReactiveVariables.svelte';
   import Conditionals from './Conditionals.svelte';
+  import RandomUser from './RandomUserComponent/RandomUser.svelte';
 
   let name = 'Naruto';
   let address = 'Konoha Village';
@@ -61,3 +62,7 @@
 <ReactiveVariables />
 
 <Conditionals />
+
+<hr>
+
+<RandomUser />
