@@ -10,6 +10,7 @@
   import ReactiveVariables from './ReactiveVariables.svelte';
   import Conditionals from './Conditionals.svelte';
   import RandomUser from './RandomUserComponent/RandomUser.svelte';
+  import Looping from './Looping.svelte';
 
   let name = 'Naruto';
   let address = 'Konoha Village';
@@ -66,3 +67,5 @@
 <hr>
 
 <RandomUser />
+
+<Looping />
